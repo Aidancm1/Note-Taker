@@ -26,3 +26,9 @@ res.sendFile(path.join(__dirname, '/public/assets/notes.html'))
 app.listen(PORT, () =>
 console.log('App listening at http://localhost:${PORT}')
 );
+
+app.get('/api/reviews', (req, res) =>
+if (req.params.note_id) {
+    console.info('${req.method} request received to get a single note');
+    
+})

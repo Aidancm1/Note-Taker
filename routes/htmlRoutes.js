@@ -8,7 +8,7 @@ router.get("/notes", (req, res) =>
 );
 
 // Get route for the home page
-router.get("/*", (req, res) =>
+router.get("/", (req, res) =>
   res.sendFile(path.join(__dirname, "../public/index.html"))
 );
 
